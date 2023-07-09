@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>responsive</title>
+        <style>
+            @media (min-width: 600px){
+                body {
+                    background-color: white;
+                }
+            }
+            @media(max-width: 599px){
+                body{
+                    background-color: blue;
+                }
+            }
+            #container{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            #container > div{
+                background-color: blueviolet;
+                font-size: 20px;
+                margin: 20px;
+                padding: 20px;
+                width: 200px;
+            }
+            #grid{
+                background-color: rgb(99, 95, 102);
+                display: grid;
+                padding: 20px;
+                grid-column-gap: 20px;
+                grid-row-gap: 10px;
+                grid-template-columns: 200px 200px auto;
+            }
+            .grid-Item{
+                background-color: red;
+                text-align: center;
+                font-size: 20px;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+      <h1>Welcome to my Webpage!</h1>  
+      <div id="container">
+        <div>1. This is some sample tedxt to use Flexbox</div>
+        <div>2. This is some sample tedxt to use Flexbox</div>
+        <div>3. This is some sample tedxt to use Flexbox</div>
+        <div>4. This is some sample tedxt to use Flexbox</div>
+        <div>5. This is some sample tedxt to use Flexbox</div>
+        <div>6. This is some sample tedxt to use Flexbox</div>
+        <div>7. This is some sample tedxt to use Flexbox</div>
+        <div>8. This is some sample tedxt to use Flexbox</div>
+        <div>9. This is some sample tedxt to use Flexbox</div>
+        <div>10. This is some sample tedxt to use Flexbox</div>
+        <div>11. This is some sample tedxt to use Flexbox</div>
+        <div>12. This is some sample tedxt to use Flexbox</div>
+      </div>
+      <div id="grid">
+        <div class="grid-Item">1</div>
+        <div class="grid-Item">2</div>
+        <div class="grid-Item">3</div>
+        <div class="grid-Item">4</div>
+        <div class="grid-Item">5</div>
+        <div class="grid-Item">6</div>
+      </div>
+    </body>
+</html> 
